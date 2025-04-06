@@ -11,7 +11,7 @@ module.exports = {
     "./app/**/**/*.{js,ts,jsx,tsx,mdx}",
     "./shared/**/*.{js,ts,jsx,tsx,mdx}",
     './app/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/preline/preline.js',
+    'node_modules/preline/dist/*.js',
   ],
   theme: {
     screens: {
@@ -233,7 +233,7 @@ module.exports = {
     require("tailwindcss"),
     require("@tailwindcss/forms"),
     // require("tailwind-clip-path"),
-    require("preline/plugin"),
+    require('preline/plugin'),
     plugin(function ({ addComponents ,addBase}:any) {
       addComponents({
         ".dirrtl": {

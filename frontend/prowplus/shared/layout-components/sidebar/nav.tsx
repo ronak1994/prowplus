@@ -8,6 +8,8 @@ const CommunicationIcon = <i className="bx bx-conversation side-menu__icon"></i>
 const PaymentIcon = <i className="bx bx-credit-card side-menu__icon"></i>;
 const ChatIcon = <i className="bx bx-chat side-menu__icon"></i>;
 const EmailIcon = <i className="bx bx-envelope side-menu__icon"></i>;
+const FileManagerIcon = <i className="bx bx-folder side-menu__icon"></i>;
+const SettingsIcon = <i className="bx bx-cog side-menu__icon"></i>;
 
 // Badges if needed
 const badge = (
@@ -95,6 +97,26 @@ export const MenuItems: any = [
     active: false,
     selected: false,
     path: "/pages/payments",
+    dirchange: true,
+  },
+
+  {
+    icon: FileManagerIcon,
+    title: "File Manager",
+    type: "link",
+    active: false,
+    selected: false,
+    path: "/pages/file-manager",
+    dirchange: true,
+  },
+
+  {
+    icon: SettingsIcon,
+    title: "Settings",
+    type: "link",
+    active: false,
+    selected: false,
+    path: "/pages/settings",
     dirchange: true,
   },
 ];
