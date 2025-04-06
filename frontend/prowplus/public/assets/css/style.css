@@ -85,8 +85,8 @@ Toast
 /* Start Icons */
 :root {
   --body-bg:	240 241 247;
-  --primary:	132 90 223;
-  --primary-rgb:	132, 90 ,223;
+  --primary:	59 0 42;
+  --primary-rgb:	59, 0, 42;
   --secondary:	35 183 229;
   --warning: 245 184 73;
   --info:	73 182 245;
@@ -4358,10 +4358,6 @@ button.gridjs-sort {
   @apply dark:text-defaulttextcolor/70 !important;
 }
 
-.apexcharts-radialbar-track.apexcharts-track path {
-  @apply stroke-light;
-}
-
 .apexcharts-menu {
   @apply bg-white dark:bg-bodybg border border-solid border-defaultborder dark:border-defaultborder/10 rounded-md !important;
 }
@@ -6451,7 +6447,7 @@ input.gridjs-input {
   [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child1 .slide .side-menu__item, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child2 .slide .side-menu__item, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child3 .slide .side-menu__item {
     @apply text-start flex;
   }
-  [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child1 .slide .side-menu__item:before, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child2 .slide .side-menu__item:before, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child3 .slide .side-menu__item:before {
+  [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child1 .side-menu__item:before, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child2 .side-menu__item:before, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child3 .side-menu__item:before {
     @apply top-[0.938rem];
   }
   [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child1 .side-menu__angle, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child2 .side-menu__angle, [data-vertical-style=doublemenu] .app-sidebar .slide-menu.child3 .side-menu__angle {
@@ -8599,9 +8595,6 @@ input.gridjs-input {
   @apply hidden;
 }
 @media (min-width: 992px) {
-  [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=menu-click][data-toggled=menu-click-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-logo, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=menu-hover][data-toggled=menu-hover-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-logo, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=icon-click][data-toggled=icon-click-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-logo, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=icon-hover][data-toggled=icon-hover-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-logo, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-vertical-style=doublemenu]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-logo {
-    @apply lg:block !important;
-  }
   [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=menu-click][data-toggled=menu-click-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-dark, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=menu-hover][data-toggled=menu-hover-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-dark, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=icon-click][data-toggled=icon-click-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-dark, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-nav-style=icon-hover][data-toggled=icon-hover-closed]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-dark, [data-menu-styles=light][data-vertical-style=overlay][data-toggled=icon-overlay-close][data-vertical-style=doublemenu]:not([data-nav-layout=horizontal]) .app-sidebar .header-logo.toggle-dark {
     @apply lg:hidden !important;
   }
@@ -8638,8 +8631,8 @@ input.gridjs-input {
 [data-menu-styles=light][data-vertical-style=icontext][data-toggled=icon-text-close]:not([icon-text=open]) .app-sidebar .header-logo .desktop-logo {
   @apply block !important;
 }
-[data-menu-styles=light][data-vertical-style=icontext][data-toggled=icon-text-close]:not([icon-text=open]) .app-sidebar .header-logo .desktop-white,
 [data-menu-styles=light][data-vertical-style=icontext][data-toggled=icon-text-close]:not([icon-text=open]) .app-sidebar .header-logo .desktop-dark,
+[data-menu-styles=light][data-vertical-style=icontext][data-toggled=icon-text-close]:not([icon-text=open]) .app-sidebar .header-logo .desktop-white,
 [data-menu-styles=light][data-vertical-style=icontext][data-toggled=icon-text-close]:not([icon-text=open]) .app-sidebar .header-logo .toggle-logo,
 [data-menu-styles=light][data-vertical-style=icontext][data-toggled=icon-text-close]:not([icon-text=open]) .app-sidebar .header-logo .toggle-dark {
   @apply hidden !important;
@@ -8798,10 +8791,6 @@ input.gridjs-input {
   @apply hidden !important;
 }
 
-[data-menu-styles=transparent] .app-sidebar {
-  --menu-prime-color: 128 135 147;
-  @apply bg-bodybg border-black/[0.07];
-}
 [data-menu-styles=transparent] .app-sidebar .slide__category::before {
   @apply border-black/50;
 }
@@ -8996,9 +8985,6 @@ input.gridjs-input {
   @apply hidden !important;
 }
 [data-menu-styles=transparent].dark .app-sidebar {
-  @apply border-white/10;
-}
-[data-menu-styles=transparent].dark .app-sidebar .main-sidebar-header {
   @apply border-white/10;
 }
 [data-menu-styles=transparent].dark .app-sidebar .main-sidebar-header .header-logo.desktop-logo {

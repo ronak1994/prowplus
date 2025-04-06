@@ -11,6 +11,10 @@ const RootLayout = ({children}:any) => {
 
   return (
     <html lang="en">
+      <head>
+        <title>Odin Ai</title>
+        <meta name="description" content="Odin Ai - Your AI Assistant" />
+      </head>
       <body>
         <Provider store={store}>
           <Initialload.Provider value={{ pageloading, setpageloading }}>
